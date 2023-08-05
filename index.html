@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+    <header class="header-main">
+        <figure class="logo-main">
+            <img src="./assests/logos/Asset 2@3x.png" alt="M.G Main Logo">
+        </figure>
+        <nav>
+            <ul class="navigation-main">
+                <li class="nav-items"><a href="#">Home</a></li>
+                <li class="nav-items"><a href="#">Products</a></li>
+                <li class="nav-items"><a href="#ourProcess">Our Process</a></li>
+                <li class="nav-items"><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-section">
+            <figure class="banner-main">
+                <img src="./assests/Images/1922x767_HeroHomepage_D.jpg" alt="Home Page Banner">
+            </figure>
+            <article>
+                <h1>Our Handcrafted Process</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi perferendis. Aliquid quia maiores dignissimos nesciunt sint eligendi laudantium voluptates inventore non! Et tenetur suscipit dolores nemo totam exercitationem nobis?</p>
+                <button>Explore Our Products</button>
+            </article>
+        </section>
+        <section id="ourProcess" class="container">
+            <article>
+                <figure>
+                    <img src="./assests/Images/Unparalelled-Quality.jpg" alt="our process step one">
+                </figure>
+                <h2>Unparalleled Quality</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi perferendis.</p>
+                <div class="action-wrapper">
+                    <a href="#" class="action primary">LEARN MORE ></a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="./assests/Images/Iconic-Designs.jpg" alt="our process step three">
+                </figure>
+                <h2>Iconic Designs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi perferendis.</p>
+                <div class="action-wrapper">
+                    <a href="#" class="action primary">LEARN MORE ></a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img src="./assests/Images/Family-Oversight-Sketch.jpg" alt="our process step four">
+                </figure>
+                <h2>Family Oversight</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, quasi perferendis.</p>
+                <div class="action-wrapper">
+                    <a href="#" class="action primary">LEARN MORE ></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <figure class="logo-footer">
+            <img src="./assests/logos/Asset 1@3x.png" alt="M.G Footer Logo">
+        </figure>
+        <div class="copyright-text">
+            <p>Copyright M.G. jewelry store © 2023</p>
+        </div>
+    </footer>
+    <script>
+        // Function to add or remove the class based on the scroll position
+        function toggleScrollClass() {
+          const scrollElement = document.querySelector('.header-main');
+          const scrollThreshold = 200; // Set the threshold in pixels
+    
+          if (window.scrollY >= scrollThreshold) {
+            scrollElement.classList.add('top-fix');
+          } else {
+            scrollElement.classList.remove('top-fix');
+          }
+        }
+    
+        // Attach the scroll event listener to the window object
+        window.addEventListener('scroll', toggleScrollClass);
+      </script>
+</body>
+</html>
